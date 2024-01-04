@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*HEADER*/
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: white;
+}
+
+.brand{
+    margin-top: -7px;
+}
+
+.brand span{
+    color: aqua;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu .active{
+    color:aqua;
+
+}
+
+.menu a:hover{
+    background-color: aqua;
+    color: black;
+    transition: ease-in .5s;
+    border-radius: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+/*MAIN*/
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}   
+
+h1 {
+    font-size: 3em;
+}
+
+span{
+    color: aqua;
+}
+
+.btn-cv {
+
+    padding: 15px 20px;
+    background-color: aqua;
+    color: black;
+    font-weight: bold; 
+    border-radius: 15px;
+    border: 2px ; /* Bordes de color negro */
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 3s; /* Transición de 2 segundos para el color de fondo */
+    animation: colorChange 3s infinite alternate; /* Animación de cambio de color */
+}
+
+@keyframes colorChange {
+    from {
+        background-color: aqua;
+    }
+    to {
+        background-color: rgb(250, 18, 250);
+        color: white;
+    }
+}
+
+.btn-cv:hover {
+    transform: scale(1.1); /* Escala del botón al pasar el cursor */
+}
+
+
+.presentacion{
+    border: 3px solid aqua;
+    margin: 5em;
+}
+
+.descripcion{
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+/*BODY*/
+
